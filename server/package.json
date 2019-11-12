@@ -1,6 +1,6 @@
 {
-  "name": "api-server",
-  "version": "0.0.0",
+  "name": "@ai3/api-server",
+  "version": "1.0.0",
   "scripts": {
     "build": "node ./util/build.js",
     "lint": "tslint --project \"tsconfig.json\"",
