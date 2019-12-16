@@ -5,7 +5,6 @@
     "javascript",
     { "language": "typescript", "autoFix": true }
   ],
-  "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false
   },
@@ -26,5 +25,8 @@
   "appService.deploySubpath": "",
   "files.exclude": {
     "**/dist": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }
