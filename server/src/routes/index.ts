@@ -40,5 +40,4 @@ router.use('/users', UserRouter);
 router.post('/sendEmail', /*checkJwt, */sendCustomEmail);
 router.post('/support', sendSupportEmail);
 
-//Se vires isto é porque funcionou
 
