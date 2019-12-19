@@ -123,6 +123,4 @@ export class AuthService {
     });
   }
 
-//alterated
-
 }
