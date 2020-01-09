@@ -40,4 +40,4 @@ router.use('/users', UserRouter);
 router.post('/sendEmail', /*checkJwt, */sendCustomEmail);
 router.post('/support', sendSupportEmail);
 
-
+/*Comentario*/
