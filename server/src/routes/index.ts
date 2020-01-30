@@ -1,4 +1,7 @@
 import { Request, Response, Router } from 'express';
+import AccountRouter from './Account';
+import CommunicationRouter from './Communication';
+import SupportRouter from './Support';
 import UserRouter from './Users';
 
 // Export the base-router
@@ -36,6 +39,9 @@ function sendSupportEmail(req: Request, res: Response) {
 
 // Add sub-routes
 router.use('/users', UserRouter);
+router.use('/communication', CommunicationRouter);
+router.use('/support', SupportRouter);
+router.use('/account', AccountRouter);
 
 router.post('/sendEmail', /*checkJwt, */sendCustomEmail);
 router.post('/support', sendSupportEmail);

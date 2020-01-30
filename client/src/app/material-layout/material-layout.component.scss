@@ -4,10 +4,12 @@
 
 .sidenav {
   width: 200px;
+  background: #05264C;
 }
 
 .sidenav .mat-toolbar {
   background: inherit;
+  color: #ffffff;
 }
 
 .mat-toolbar.mat-primary {
@@ -18,4 +20,10 @@
 
 .main-content {
   padding: 16px;
+}
+
+#alberto {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
