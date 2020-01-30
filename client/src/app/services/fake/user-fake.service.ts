@@ -24,53 +24,6 @@ let DATA: Api.IUser[] = [
   }
 ];
 
-
-
-//Tentativa de fazer 1.1
-const mongoose = require('mangoose');
-const Schema = mongoose.Schema;
-
-const UserSchema = new Schema({
-  username: {
-    type: String,
-    required: true
-  },
-
-  password: {
-    type: String,
-    required: true
-  },
-
-  email: {
-    type: String,
-    required: true
-  },
-
-  isAdmin: {
-    type: Boolean,
-    required: true,
-    default: false
-  }
-});
-
-mongoose.model('User', UserSchema);
-
-
-
-
-/*const modelUser = mongoose.model('User');
-
-let userController = {};
-
-userController.allUsers = (req, res) => {
-  modelUser.find()
-    .then(results =>)
-}*/
-
-
-
-
-
 function containsText(text: string, searchText: string) {
   return text.indexOf(searchText) !== -1;
 }
