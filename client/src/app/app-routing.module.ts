@@ -10,7 +10,6 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    redirectTo: '',
     pathMatch: 'full',
     component: ProfileComponent,
     canActivate: [AuthGuard]
@@ -22,3 +21,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

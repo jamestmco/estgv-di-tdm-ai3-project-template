@@ -7,6 +7,9 @@
       <!--a mat-list-item href="#">Link 2</a-->
       <!--a mat-list-item href="#">Logout</a-->
     </mat-nav-list>
+    <!--Botão login e home-->
+    <app-navbar></app-navbar>
+    <!--Fim Botão login e home-->
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -14,7 +17,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Projeto Final</span>
+      <span>Aplicações Internet 3</span>
     </mat-toolbar>
     <div class="main-content">
       <router-outlet></router-outlet>

@@ -6,7 +6,7 @@ import { AuthService } from '../auth.service';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavbarComponent implements OnInit {
 
   constructor(public auth: AuthService) { }
 
