@@ -14,4 +14,8 @@ export class CustomHttpUrlEncodingCodec extends HttpUrlEncodingCodec {
         v = super.encodeValue(v);
         return v.replace(/\+/gi, '%2B');
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2

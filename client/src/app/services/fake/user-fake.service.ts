@@ -4,6 +4,7 @@ import { Observable, of, throwError } from 'rxjs';
 import { Injectable } from '@angular/core';
 
 import { IUserService } from '../services';
+import { truncate } from 'fs';
 
 let DATA: Api.IUser[] = [
   {
