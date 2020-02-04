@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/falmeida/ai3-project-template/@types"
+		},
+		{
+			"path": "D:/Coisas/Escola/19_20/AI_III/ProjetoFinal/estgv-di-tdm-ai3-project-template/@types"
 		}
 	],
 	"settings": {}

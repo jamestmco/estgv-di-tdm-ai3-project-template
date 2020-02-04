@@ -3,8 +3,12 @@
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
-    { "language": "typescript", "autoFix": true }
+    {
+      "language": "typescript",
+      "autoFix": true
+    }
   ],
+  "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false
   },
@@ -21,7 +25,9 @@
     "**/node_modules": true
   },
   "typescript.referencesCodeLens.enabled": true,
-  "appService.zipIgnorePattern": [".vscode{,/**}"],
+  "appService.zipIgnorePattern": [
+    ".vscode{,/**}"
+  ],
   "appService.deploySubpath": "",
   "files.exclude": {
     "**/dist": true
