@@ -21,10 +21,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { MaterialLayoutComponent } from './material-layout/material-layout.component';
-import { ProfileComponent } from './profile/profile.component';
-import { NavbarComponent } from './nav-bar/nav-bar.component';
-
-
 
 /**
  * Build API configuration
@@ -40,9 +36,7 @@ function buildApiConfiguration() {
   declarations: [
     AppComponent,
     MaterialLayoutComponent,
-    LoginFormComponent,
-    ProfileComponent,
-    NavbarComponent
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,

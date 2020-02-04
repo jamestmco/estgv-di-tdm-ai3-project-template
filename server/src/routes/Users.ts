@@ -1,15 +1,26 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
 import { UserDao } from '@daos';
 import { buildApiErrorMessage, logger, paramMissingError } from '@shared';
 import { Request, Response, Router } from 'express';
 import { BAD_REQUEST, CREATED, OK } from 'http-status-codes';
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
 import { IUserDao } from '../daos/User/UserDao';
+
 
 const USER_ID_HTTP_PARAM_NAME = 'userId';
 const USER_ID_HTTP_ROUTE_PARAM = `:${USER_ID_HTTP_PARAM_NAME}(\\d+)`;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
 /**
  * Get user identifier from path
  * @param req Request
