@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
 import { buildApiErrorMessage } from '@shared';
 import { Request, Response, Router } from 'express';
 import { INTERNAL_SERVER_ERROR } from 'http-status-codes';
@@ -17,11 +13,7 @@ const router = Router();
 async function handleGetUserProfile(req: Request, res: Response) {
     // TODO: Handle user password change via Auth0 Auth API
     res.status(INTERNAL_SERVER_ERROR)
-<<<<<<< HEAD
         .json(buildApiErrorMessage('Not implemented'));
-=======
-    .json(buildApiErrorMessage('Not implemented'));
->>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
 }
 
 /**
