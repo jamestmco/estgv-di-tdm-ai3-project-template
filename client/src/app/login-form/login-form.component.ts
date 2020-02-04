@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from '../api-client/api/account.service';
-<<<<<<< HEAD
-=======
-import { LoginRequest } from '../api-client';
->>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
 
 @Component({
   selector: 'app-login-form',
@@ -22,15 +18,4 @@ export class LoginFormComponent implements OnInit {
   ngOnInit() {
   }
 
-<<<<<<< HEAD
-=======
-  doLogin() {
-    const loginReq: LoginRequest = {
-username: "",
-password: ""
-    };
-    this.accountService.accountLoginPost(loginReq).subscribe()
-  }
-
->>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
 }

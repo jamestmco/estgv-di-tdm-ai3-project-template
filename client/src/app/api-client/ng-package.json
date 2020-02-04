@@ -1,12 +1,6 @@
 {
     "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
     "lib": {
-<<<<<<< HEAD
         "entryFile": "index.ts"
     }
 }
-=======
-      "entryFile": "index.ts"
-    }
-  }
->>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
