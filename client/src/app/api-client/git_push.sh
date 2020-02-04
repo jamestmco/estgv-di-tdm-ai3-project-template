@@ -48,8 +48,4 @@ git pull origin master
 
 # Pushes (Forces) the changes in the local repository up to the remote repository
 echo "Git pushing to https://github.com/${git_user_id}/${git_repo_id}.git"
-<<<<<<< HEAD
 git push origin master 2>&1 | grep -v 'To https'
-=======
-git push origin master 2>&1 | grep -v 'To https'
->>>>>>> dc1b8d0a80793683eeda13f7237f9a5fbdb15cc2
