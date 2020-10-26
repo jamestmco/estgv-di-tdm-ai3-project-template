@@ -1,4 +1,4 @@
-import { MailData } from '@sendgrid/helpers/classes/mail';
+import { logger } from './shared/Logger';
 import sendGridEmailClient from '@sendgrid/mail';
 
 /**
@@ -14,17 +14,14 @@ export function sendEmail(
   subject: string,
   message: string,
 ) {
-  const sendGridApiKey = process.env.SENDGRID_API_KEY;
-  if (sendGridApiKey === undefined) {
-      throw new Error('SENDGRID_API_KEY environment variable not defined');
-  }
-  sendGridEmailClient.setApiKey(sendGridApiKey);
-  const msg: MailData = {
-    to,
-    from,
-    subject,
+  sendGridEmailClient.setApiKey(process.env.SENDGRID_API_KEY as string);
+   const msg = {
+    to: to,
+    from: from,
+    subject: subject,
     text: message,
-    html: message,
+    html: '<p>'+message+'</p>',
   };
+  logger.info(`Sending email ${JSON.stringify(msg)}`);
   return sendGridEmailClient.send(msg);
 }

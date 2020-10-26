@@ -12,4 +12,4 @@
 
 export interface SupportResponse { 
     message?: string;
-} 
+}

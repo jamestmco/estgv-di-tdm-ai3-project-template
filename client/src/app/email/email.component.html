@@ -1,0 +1,11 @@
+<div class="email">
+    <legend>E-Mail</legend>
+    <input type="text" name="email" id="titulo" placeholder="Insert e-mail" style="outline: none" required
+        class="email">
+    <br><br>
+    <legend>Subject</legend>
+    <textarea name="subject" class="subject" rows="8" placeholder="Insert subject" required
+        style="outline: none"></textarea>
+    <br><br>
+    <input type="submit" value="Enviar mensagem" class="send" (click)="doSupport()" [disabled]="!declarativeForm.valid">
+</div>

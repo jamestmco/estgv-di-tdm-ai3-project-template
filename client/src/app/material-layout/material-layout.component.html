@@ -1,15 +1,12 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>MENU</mat-toolbar>
+    <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a id="blanquito" mat-list-item routerLink="/users">USERS</a>
+      <a mat-list-item routerLink="/users">Users</a>
       <!--a mat-list-item href="#">Link 2</a-->
       <!--a mat-list-item href="#">Logout</a-->
     </mat-nav-list>
-    <!--Botão login e home-->
-    <app-navbar></app-navbar>
-    <!--Fim Botão login e home-->
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -17,11 +14,10 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Aplicações Internet 3</span>
+      <span>ai3</span>
     </mat-toolbar>
     <div class="main-content">
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
-<!--asdaasd-->

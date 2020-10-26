@@ -21,6 +21,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { MaterialLayoutComponent } from './material-layout/material-layout.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { EmailComponent } from './email/email.component';
 
 /**
  * Build API configuration
@@ -36,7 +40,10 @@ export function buildApiConfiguration() {
   declarations: [
     AppComponent,
     MaterialLayoutComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    NavBarComponent,
+    ProfileComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +62,7 @@ export function buildApiConfiguration() {
     MatIconModule,
     MatListModule,
     ApiModule.forRoot(buildApiConfiguration),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [
     // Hard-coded on API *Service classes but can be overriden here

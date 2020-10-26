@@ -56,8 +56,8 @@ export function buildManagementClient(scopeOrScopes: string | string[]) {
  * Get access token in the request
  * @param req Request
  */
-export function getAccessToken(req: Request) {
-  if (req.headers.authorization && req.headers.authorization.split(' ')[0] === 'Bearer') {
+export function getAccessToken(req: Request) {
+  if (req.headers.authorization && req.headers.authorization.split(' ')[0] === 'Bearer') {
     return req.headers.authorization.split(' ')[1];
   }
   throw new Error('No Bearer access token not found in Authorization headers');

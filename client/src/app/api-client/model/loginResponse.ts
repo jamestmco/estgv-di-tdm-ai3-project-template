@@ -17,4 +17,4 @@ export interface LoginResponse {
      * Expiration timestamp
      */
     expiresIn: number;
-} 
+}

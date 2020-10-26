@@ -1,12 +1,7 @@
 <header>
-  <br>
-  <a routerLink="/">HOMEPAGE</a>
-  <br>
-
-  <button (click)="auth.login()" *ngIf="!auth.loggedIn">LOG IN</button>
-    <button (click)="auth.logout()" *ngIf="auth.loggedIn">LOG OUT</button>
-    <br><br><br>
-    <div class="texto">
-
-    <a routerLink="profile" *ngIf="auth.loggedIn">PROFILE</a></div>
-  </header>
+    <a routerLink="/"><button>Home</button></a>
+    <button (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</button>
+    <button (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</button>
+    <a routerLink="profile" *ngIf="auth.loggedIn"><button>Profile</button></a>
+    <a routerLink="email" *ngIf="auth.loggedIn"><button>Email</button></a>
+</header>

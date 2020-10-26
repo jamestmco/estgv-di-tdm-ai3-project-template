@@ -12,4 +12,4 @@
 
 export interface ChangePasswordRequest { 
     email: string;
-} 
+}

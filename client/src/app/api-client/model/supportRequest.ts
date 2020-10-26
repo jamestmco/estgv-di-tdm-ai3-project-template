@@ -14,4 +14,4 @@ export interface SupportRequest {
     email: string;
     subject: string;
     message: string;
-} 
+}

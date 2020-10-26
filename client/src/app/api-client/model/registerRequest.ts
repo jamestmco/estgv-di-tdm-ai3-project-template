@@ -43,4 +43,4 @@ export interface RegisterRequest {
      * A URI pointing to the user's picture.
      */
     picture?: string;
-} 
+}

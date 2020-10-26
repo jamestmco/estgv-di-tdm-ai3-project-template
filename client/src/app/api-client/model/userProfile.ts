@@ -34,4 +34,4 @@ export interface UserProfile {
      * Timestamp of last update
      */
     updatedAt?: number;
-} 
+}

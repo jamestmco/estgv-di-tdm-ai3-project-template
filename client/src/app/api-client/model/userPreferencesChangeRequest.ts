@@ -12,4 +12,4 @@
 
 export interface UserPreferencesChangeRequest { 
     theme?: string;
-} 
+}

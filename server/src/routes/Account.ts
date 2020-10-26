@@ -1,7 +1,7 @@
+
 import { buildApiErrorMessage } from '@shared';
 import { Request, Response, Router } from 'express';
 import { INTERNAL_SERVER_ERROR } from 'http-status-codes';
-import { checkJwt } from '../auth0';
 
 const router = Router();
 
@@ -13,7 +13,7 @@ const router = Router();
 async function handleGetUserProfile(req: Request, res: Response) {
     // TODO: Handle user password change via Auth0 Auth API
     res.status(INTERNAL_SERVER_ERROR)
-        .json(buildApiErrorMessage('Not implemented'));
+        .send(buildApiErrorMessage('Not implemented'));
 }
 
 /**
@@ -24,7 +24,7 @@ async function handleGetUserProfile(req: Request, res: Response) {
 async function handleChangeUserPassword(req: Request, res: Response) {
     // TODO: Handle user password change via Auth0 Auth API
     res.status(INTERNAL_SERVER_ERROR)
-        .json(buildApiErrorMessage('Not implemented'));
+        .send(buildApiErrorMessage('Not implemented'));
 }
 
 /**
@@ -33,9 +33,9 @@ async function handleChangeUserPassword(req: Request, res: Response) {
  * @param res Response
  */
 async function handleUserLogin(req: Request, res: Response) {
-    // TODO: Handle user login via Auth0 API
+    // TODO: Handle user login via Auth0 API    
     res.status(INTERNAL_SERVER_ERROR)
-        .json(buildApiErrorMessage('Not implemented'));
+        .send(buildApiErrorMessage('Not implemented'));
 }
 
 /**
@@ -44,9 +44,10 @@ async function handleUserLogin(req: Request, res: Response) {
  * @param res Response
  */
 async function handleUserRegistration(req: Request, res: Response) {
-    // TODO: Handle user registration via Auth0 Auth API
+    // TODO: Handle user registration via Auth0 Auth API   
+    
     res.status(INTERNAL_SERVER_ERROR)
-        .json(buildApiErrorMessage('Not implemented'));
+        .send(buildApiErrorMessage('Not implemented'));
 }
 
 /**
@@ -57,7 +58,7 @@ async function handleUserRegistration(req: Request, res: Response) {
 async function handleUserLogout(req: Request, res: Response) {
     // TODO: Handle user logout via Auth0 Auth API
     res.status(INTERNAL_SERVER_ERROR)
-        .json(buildApiErrorMessage('Not implemented'));
+    .send(buildApiErrorMessage('Not implemented'));
 }
 
 /**
@@ -68,14 +69,14 @@ async function handleUserLogout(req: Request, res: Response) {
 async function handleUpdateUserPreferences(req: Request, res: Response) {
     // TODO: Update user preferences via Auth0 MgmtAPI (user_profile.user_metadata)
     res.status(INTERNAL_SERVER_ERROR)
-        .json(buildApiErrorMessage('Not implemented'));
+        .send(buildApiErrorMessage('Not implemented'));
 }
 
 router.get('/profile', handleGetUserProfile);
-router.put('/preferences', checkJwt, handleUpdateUserPreferences);
+router.put('/preferences', handleUpdateUserPreferences);
 router.post('/change_password', handleChangeUserPassword);
 router.post(`/register`, handleUserRegistration);
 router.post(`/login`, handleUserLogin);
-router.get(`/logout`, checkJwt, handleUserLogout);
+router.get(`/logout`, handleUserLogout);
 
 export default router;

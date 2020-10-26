@@ -27,7 +27,7 @@ declare namespace Api {
         email: string;
     }
 
-    interface UserPreferencesChangeRequest {
+    interface UserPreferencesChangeRequest {
         theme: string;
     }
 
